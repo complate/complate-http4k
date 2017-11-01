@@ -1,4 +1,7 @@
-# Complate HTTP4K Adapter
+# complate HTTP4K Adapter
+
+[![Build Status](https://travis-ci.org/complate/complate-http4k.svg?branch=master)](https://travis-ci.org/complate/complate-http4k)
+[![codecov](https://codecov.io/gh/complate/complate-http4k/branch/master/graph/badge.svg)](https://codecov.io/gh/complate/complate-http4k)
 
 This adapter connects [HTTP4K](https://http4k.org) with the templating engine [complate](https://github.com/complate). 
 
@@ -37,7 +40,7 @@ dependencies {
   compile "org.http4k:http4k-core:2.35.1"
   compile "org.http4k:http4k-server-netty:2.35.1"
   
-  // Complate Adapter
+  // complate Adapter
   compile 'com.github.complate:complate-http4k:0.1.0'
 }
 ```
