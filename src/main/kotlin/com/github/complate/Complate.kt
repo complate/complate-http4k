@@ -3,6 +3,7 @@ package com.github.complate
 import jdk.nashorn.api.scripting.NashornException
 import jdk.nashorn.api.scripting.NashornScriptEngine
 import jdk.nashorn.api.scripting.NashornScriptEngineFactory
+import org.http4k.template.ViewModel
 import java.io.*
 import java.util.*
 import javax.script.ScriptException
@@ -41,8 +42,8 @@ class ComplateTemplateEngine(baseDirectory: String) {
   }
 
   @Throws(ComplateException::class)
-  fun invoke(view: String, writer: ComplateStream) {
-    this.invokeImpl(writer, view)
+  fun invoke(view: String, writer: ComplateStream, model: ViewModel) {
+    this.invokeImpl(writer, view, model)
   }
 
   @Throws(ComplateException::class)

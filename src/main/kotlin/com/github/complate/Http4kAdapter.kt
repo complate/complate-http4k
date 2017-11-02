@@ -23,7 +23,7 @@ class ComplateTemplates(private val configure: (ComplateTemplateEngine) -> Compl
   private class ComplateTemplateRenderer(private val engine: ComplateTemplateEngine) : TemplateRenderer {
     override fun invoke(viewModel: ViewModel): String {
       val writer = ComplateStreamImpl()
-      engine.invoke(template(viewModel), writer)
+      engine.invoke(template(viewModel), writer, viewModel)
       return writer.toString()
     }
 
