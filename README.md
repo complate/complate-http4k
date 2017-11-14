@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/complate/complate-http4k.svg?branch=master)](https://travis-ci.org/complate/complate-http4k)
 [![codecov](https://codecov.io/gh/complate/complate-http4k/branch/master/graph/badge.svg)](https://codecov.io/gh/complate/complate-http4k)
+[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
 
 This adapter connects [HTTP4K](https://http4k.org) with the templating engine [complate](https://github.com/complate). 
 
@@ -20,13 +22,13 @@ Library import:
 
 ```gradle
 dependencies {
-  compile 'com.github.complate:complate-http4k:0.1.0'
+  compile 'com.github.complate:complate-http4k:0.1.1'
 }
 ```
 
 ### HTTP4K Example
 
-All that is required to move an existing _HTTP4K_ based application from another templating engine towards complate
+Everything that is required to move an existing _HTTP4K_ based application from another templating engine towards complate
 can be achieved by switching the templates to `com.github.complate.ComplateTemplates`.
   
 Here is a more-or-less complete (working) base that shows how to use.
@@ -41,7 +43,7 @@ dependencies {
   compile "org.http4k:http4k-server-netty:2.35.1"
   
   // complate Adapter
-  compile 'com.github.complate:complate-http4k:0.1.0'
+  compile 'com.github.complate:complate-http4k:0.1.1'
 }
 ```
   
